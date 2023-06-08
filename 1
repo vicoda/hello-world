@@ -1,10 +1,41 @@
-# Welcome to GitHub
 
-Welcome to GitHub—where millions of developers work together on software. Ready to get started? Let’s learn how this all works by building and publishing your first GitHub Pages website!
+import config
 
-## Repositories
+import asyncpraw
 
-Right now, we’re in your first GitHub **repository**. A repository is like a folder or storage space for your project. Your project's repository contains all its files such as code, documentation, images, and more. It also tracks every change that you—or your collaborators—make to each file, so you can always go back to previous versions of your project if you make any mistakes.
+import RedditFiles
+
+import time
+
+import datetime
+
+loopnumber = 1      #global variable for infinite while loop
+
+endcondition = 0    #endcondtion for the infinite while loop to terminate the program
+
+OldTime = int(round(time.time()*1000))
+
+while (endcondition != 1):
+
+    CurrentTime = int(round(time.time()*1000))
+
+    if OldTime < CurrentTime - 5000:
+
+        if __name__ == "__main__":
+
+            loop = nest_asyncio.events.get_event_loop()
+
+            loop.run_until_complete(RedditFiles.main())
+
+        OldTime = int(round(time.time()*1000))
+
+    
+
+    time.sleep(1)
+
+    print(loopnumber)
+
+    loopnumber = loopnumber + 1as code, documentation, images, and more. It also tracks every change that you—or your collaborators—make to each file, so you can always go back to previous versions of your project if you make any mistakes.
 
 This repository contains three important files: The HTML code for your first website on GitHub, the CSS stylesheet that decorates your website with colors and fonts, and the **README** file. It also contains an image folder, with one image file.
 
